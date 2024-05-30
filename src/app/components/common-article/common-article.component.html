@@ -1,0 +1,15 @@
+<article class="additional-article">
+    <div class="additional-article__content">
+      <time [attr.datetime]="dateISO" class="additional-article__date">{{ dateFormatted }}</time>
+      <h2 class="additional-article__title">
+        <a [href]="link" class="additional-article__link">
+          {{ title }}
+        </a>
+      </h2>
+      <p class="additional-article__text">{{ description }}</p>
+    </div>
+    <div class="additional-article__author">
+      {{ author }}
+    </div>
+  </article>
+  
