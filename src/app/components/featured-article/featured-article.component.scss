@@ -1,0 +1,95 @@
+.featured-article {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 40rem;
+
+    @media (min-width: 1024px) {
+        margin: 0;
+        max-width: 32rem;
+    }
+
+    &__date {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: #718096;
+    }
+
+    &__title {
+        margin-top: 1rem;
+        font-size: 1.875rem;
+        font-weight: 700;
+        line-height: 2.25rem;
+        color: #1a202c;
+
+        @media (min-width: 640px) {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        }
+    }
+
+    &__text {
+        margin-top: 1rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        color: #718096;
+    }
+
+    &__actions {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem;
+
+        @media (min-width: 640px) {
+        margin-top: 2rem;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        }
+
+        @media (min-width: 1024px) {
+        margin-top: 1rem;
+        flex-direction: column;
+        }
+    }
+
+    &__continue {
+        display: flex;
+    }
+
+    &__continue-link {
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        color: #6366f1;
+    }
+
+    &__author {
+        display: flex;
+        border-top: 1px solid rgba(26, 32, 44, 0.1);
+        padding-top: 2rem;
+
+        @media (min-width: 1024px) {
+        border-top: none;
+        padding-top: 0;
+        }
+    }
+
+    &__author-link {
+        display: flex;
+        gap: 0.625rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        color: #1a202c;
+
+        &-img {
+        height: 1.5rem;
+        width: 1.5rem;
+        flex: none;
+        border-radius: 9999px;
+        background-color: #f7fafc;
+        }
+    }
+}

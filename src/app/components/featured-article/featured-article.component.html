@@ -1,0 +1,14 @@
+<article class="featured-article">
+    <time [attr.datetime]="dateISO" class="featured-article__date">{{dateFormatted}}</time>
+    <h2 id="featured-post" class="featured-article__title">{{title}}</h2>
+    <p class="featured-article__text">{{description}}</p>
+    <div class="featured-article__actions">
+      <div class="featured-article__continue">
+        <a href="{{ postUrl }}" class="featured-article__continue-link" aria-describedby="featured-post">Continuar lendo</a>
+      </div>
+      <div class="featured-article__author">
+        {{author}}
+      </div>
+    </div>
+  </article>
+  
